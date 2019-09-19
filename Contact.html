@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link href="Main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="Navigation">
+		<a href=index.html><img src="logo.png" width="200" height ="200"> </a>
+		<div class="Navigation-right">
+			<li><a href= "index.html">Home</a></li>
+			<li><a href="Services.html"> Services </a></li>
+			<li><a class="active" href="#contact">Contact Us</a></li>	
+		</div>
+	</div>
+	
+	<div class="container">
+ 		 <form action="Thanks.html">
+  			<div class="row">
+    			<div class="col-25">
+      				<label for="fname">Full Name</label>
+    			</div>
+    			<div class="col-75">
+      				<input type="text" id="fname" name="fullname" placeholder="Your name..">
+    			</div>
+  			</div>
+  			<div class="row">
+    			<div class="col-25">
+      				<label for="add">Address</label>
+    			</div>
+    				<div class="col-75">
+      					<input type="text" name="address" placeholder="Address...">
+    				</div>
+  			</div>
+  				<div class="row">
+    				<div class="col-25">
+      						<label for="country">Country</label>
+    				</div>
+    			<div class="col-75">
+      				<select id="country" name="country">
+        				<option value="usa">USA</option>
+       					<option value="canada">Canada</option>
+     				    <option value="japan">Japan</option>
+     				</select>
+    			</div>
+  				</div>
+  					<div class="row">
+    					<div class="col-25">
+      						<label for="subject">Subject</label>
+   						</div>
+    					<div class="col-75">
+      						<textarea id="subject" name="subject" placeholder="Talk to our sewers" style="height:150px"></textarea>
+    					</div>
+  					</div>
+  					<div class="row">
+    					<input type="submit" value="Submit">
+  					</div>
+  				</form>
+			</div>
+</body>
+</html>

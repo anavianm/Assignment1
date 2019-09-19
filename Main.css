@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	margin: 0px, auto;
+	margin-top: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	font-family: Arial, Helvetic, sans-serif;
+	background-color: #fcf9ea;
+}
+
+li{
+	display: table-cell;
+	position: relative;
+}
+
+h1{
+	width: 400px;
+}
+
+
+a{
+	text-decoration: none;
+	color: #626262;
+}
+
+
+
+.Navigation{ 
+	overflow: hidden !important; 
+	background-color: #fcf9ea;
+}
+
+.Navigation a{
+	float: left;
+	color: #626262;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	transition: 0.3s;
+}
+
+
+.Navigation a:after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #badfdb;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.Navigation a:hover:after{
+	width: 100%;
+	left: 0;
+}
+
+.active{
+	background-color: #F8A978;
+	color: #F8A978;
+}
+
+.Navigation-right{
+	float: right;
+	padding-top: 30px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.box{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+.fix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.wrapper{
+	overflow: hidden;
+	border: 1px;
+	clear: none;
+	margin: 100px;
+}
+
+.first{
+	width: 100%!important;
+	margin: 0 !important;
+	padding: 0 !important;
+
+}
+
+.box .text{
+	
+	text-transform: uppercase;
+	color: #461100;
+	font-size: 50px;
+	position: absolute;
+	z-index: 999;
+	margin: auto;
+	left: 30%;
+	right: 0;
+	top: 0;
+	text-align: center;
+	width: 30%;
+}
+
+
+.button {
+  text-decoration: none!important;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #F8A978;
+  border: none;
+  color: #FFFFFF !imporant;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer!important;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+#stuffed{
+	opacity: 0.9;
+	object-fit: cover;
+	overflow: hidden;
+	
+}
+
+#tagline{
+	font-weight: lighter;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fcf9ea;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#thanks{
+	font-size: 25px;
+	color: #626262;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#centered{
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 600px){
+	.Navigation, .Navigation-right{
+		float: none;
+		display: block;
+	}
+	.col-25, .col-75, input[type=submit] {
+    	width: 100%;
+    	margin-top: 0;
+  	}
+}
+
+
+
