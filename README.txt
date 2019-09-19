@@ -1,4 +1,4 @@
-Name of org: Stuffy 
+Name of org: Stuffy.com
 What they do: They take old and dirty stuffed animals and repair them, mostly for sick children. they also 
 	      donate stuffed animals for every one they fix 
 Target Demographic: Parents with youg children, adults with old stuffed animals they need to fix, people 
